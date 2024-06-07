@@ -18,10 +18,7 @@
         "dest": "/client/dist/$1"
       },
       {
-        "src": "/send",
-        "headers": {
-            "Access-Control-Allow-Origin": "https://vanitha-mern-portfolio-client.vercel.app"
-          },
+        "src": "/mail(.*)",
         "dest": "./index.js"
       }
     ]

@@ -17,11 +17,11 @@ app.use(cors({
 }));
 
 const port = process.env.PORT || 5000;
-// app.get('/', (req, res) => {
-//   res.send('Hello from the backend!');
-// });
+app.get('/mail', (req, res) => {
+  res.send('Hello from the backend!');
+});
 // ****** SEND API
-app.post("/send", emailSendController.emailSend);
+app.post("/mail/send", emailSendController.emailSend);
 app.listen(port, () => {
   console.log(`server runnig on: ${port} port`);
 });
