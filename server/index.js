@@ -17,9 +17,9 @@ app.use(cors({
 }));
 
 const port = process.env.PORT || 5000;
-app.get('/', (req, res) => {
-  res.send('Hello from the backend!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello from the backend!');
+// });
 // ****** SEND API
 app.post("/send", emailSendController.emailSend);
 app.listen(port, () => {
