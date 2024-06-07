@@ -19,6 +19,9 @@
       },
       {
         "src": "/(.*)",
+        "headers": {
+            "Access-Control-Allow-Origin": "https://vanitha-mern-portfolio-client.vercel.app"
+          },
         "dest": "/server/index.js"
       }
     ]
