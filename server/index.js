@@ -11,7 +11,7 @@ app.use(upload.any());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(cors({
-    origin: `${process.env.HOST}`,
+    origin: '*',
     methods: ["GET", "POST", "PATCH", "DELETE"],
     allowedHeaders: ['Content-Type']
 }));
