@@ -8,12 +8,21 @@ const app = express();
 // Configure multer for handling form-data
 const upload = multer();
 app.use(upload.any());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+const origins = [process.env.HOST1, process.env.HOST2];
 app.use(cors({
-    origin: '*',
-    methods: ["GET", "POST", "PATCH", "DELETE"],
-    allowedHeaders: ['Content-Type']
+  origin: (origin, callback) => {
+    if (origins.includes(origin)) {
+      console.log(origin, origins)
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  },
+  methods: ["GET", "POST", "PATCH", "DELETE"],
+  allowedHeaders: ['Content-Type']
 }));
 
 const port = process.env.PORT || 5000;
