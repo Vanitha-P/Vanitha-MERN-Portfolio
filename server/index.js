@@ -25,7 +25,8 @@ app.use(cors({
   methods: ["GET", "POST", "PATCH", "DELETE"],
   allowedHeaders: ['Content-Type']
 }));
-
+// Handle pre-flight requests
+app.options('*', cors());
 const port = process.env.PORT || 5000;
 app.get('/', (req, res) => {
   res.send('Hello from the backend!');
