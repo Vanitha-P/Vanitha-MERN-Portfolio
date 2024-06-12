@@ -11,7 +11,7 @@ app.use(upload.any());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const origins = [process.env.HOST1, process.env.HOST2];
+const origins = [process.env.HOST1, process.env.HOST2, "https://vanitha-mern-portfolio-server.onrender.com/", process.env.HOST3];
 app.use(cors({
   origin: (origin, callback) => {
     if (origins.includes(origin)) {
