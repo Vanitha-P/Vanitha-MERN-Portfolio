@@ -1,9 +1,17 @@
-import React from 'react'
-
+import React, { createElement } from 'react'
+import { footer } from '../contents.jsx'
 const Footer = () => {
   return (
-    <div className='max-w-[1200px] sm:py-20 p-5 flex justify-end items-end mx-auto'>
-      <p className=' ml-10 primary-color'> vanithaponraj18@gmail.com <br /> #2024</p>
+    <div className='max-w-[1200px] flex justify-end items-end mx-auto'>
+      <ul>
+        {footer.map((item, i) => (
+          <li className='text-white flex py-1 mx-1'>{createElement(item.icon)}
+            <a href={item.content} target="_blank" rel="noopener noreferrer" className='text-xs font-normal primary-color mx-1 ' title={item.title}>
+              {item.content}
+            </a>
+
+          </li>
+        ))}<li className='primary-color py-1 mx-1 text-xs font-bold' >#2024</li></ul>
     </div>
   )
 }

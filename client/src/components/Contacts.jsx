@@ -63,7 +63,7 @@ const Contacts = () => {
     return (
         <>
             <Toast />
-            <div className="container flex-colo py-12 mx-auto min-h-screen sm:py-2 px-4 ">
+            <div className="container flex-col py-12 mx-auto min-h-screen sm:py-2 px-4 ">
                 
                 (
                     <div class='max-w-[1200px] mx-auto sm:py-20 p-5' id="contact" data-aos="fade-down" data-aos-delay={200}>
@@ -92,7 +92,7 @@ const Contacts = () => {
                                             </div>
                                             <div>
                                                 <div class="mt-2.5 relative px-2.5">
-                                                    <input type="number" name="" id="" placeholder='Your Contact Number' class="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:outline-none focus:border-lime-600 gap-x-4" value={phone}
+                                                    <input type="number" name="" id="" placeholder='Your Contact No' class="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:outline-none focus:border-lime-600 gap-x-4" value={phone}
                                                         onChange={(e) => setPhone(e.target.value)}
                                                         required />{phoneError && <InlineError error={phoneError} />}
                                                 </div>
