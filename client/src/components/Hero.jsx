@@ -1,5 +1,5 @@
 import React from 'react'
-import heroinIamge from '../assets/profile.jpg'
+import heroinIamge from '../assets/Vanitha_Fullstack_2024.pdf'
 import { TypeAnimation } from 'react-type-animation'
 import {intro} from '../contents'
 
