@@ -2,7 +2,7 @@ import React, { createElement } from 'react'
 import { footer } from '../contents.jsx'
 const Footer = () => {
   return (
-    <div className='max-w-[1200px] flex justify-end items-end mx-auto'>
+    <div className='max-w-[1200px] flex justify-end items-end mx-auto mb-5'>
       <ul>
         {footer.map((item, i) => (
           <li className='text-white flex py-1 mx-1'>{createElement(item.icon)}

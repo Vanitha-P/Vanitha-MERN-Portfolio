@@ -7,7 +7,7 @@ const Navbar = () => {
     }
     return (
         <div className='bg-black text-gray-200 h-[100px] max-w-[1200px] mx-auto flex justify-between items-center'>
-            <h1 className='text-3xl font-bold primary-color ml-4'>VANITHA P</h1>
+            <h1 className='text-2xl font-bold primary-color ml-4'>VANITHA P</h1>
             <ul className='hidden md:flex underline text-xl'>
                 <li className='p-5'><a href='#about'>About</a></li>
                 <li className='p-5'><a href='#work'>Work</a></li>
