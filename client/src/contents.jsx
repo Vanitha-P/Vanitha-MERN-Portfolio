@@ -145,7 +145,7 @@ const experience = [
 ];
 const intro = [
   {
-    intro: "Passionate Backend Developer with 3+ years of experience, mastering Node.js and Laravel to build scalable, high-performance applications. Adept at crafting seamless APIs and optimizing database interactions with MongoDB. Committed to delivering robust, elegant solutions that drive business success.",
+    intro: "Passionate Backend Developer with 4.5+ years of experience, mastering Node.js and Laravel to build scalable, high-performance applications. Adept at crafting seamless APIs and optimizing database interactions with MongoDB. Committed to delivering robust, elegant solutions that drive business success.",
     download: AiOutlineVerticalAlignBottom,
     contact: AiFillPhone
   }
