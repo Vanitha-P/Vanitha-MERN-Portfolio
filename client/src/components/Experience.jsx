@@ -42,16 +42,16 @@ const Experience = () => {
                 shouldCloseOnOverlayClick={false}  // Add this line
             >
                 <div className=' text-white'>
-                    <div className="flex justify-center items-center flex-col sm:flex-row ">
+                    <div className="flex justify-center items-center flex-col sm:flex-row mb-4">
 
-                        <img className='w-[150px] hover:w-[200px] px-2.5' src={selectSkill?.icon} alt="" />
+                        <img className='w-14 hover:w-[80px] px-2.5' src={selectSkill?.icon} alt="" />
                         <h6 className='px-2.5 whitespace-nowrap text-xl'>{selectSkill?.name}</h6>
 
                     </div>
-                    <div className="flex py-2 items-start flex-col sm:flex-row text-base sm:text-xl primary-color">{selectSkill?.title} - {selectSkill?.duration}</div>
-                    <div className='pl-4 font-sans !leading-8'>{selectSkill?.expHeadings.map((work, index) => (
+                    <div className="flex py-2 items-start flex-col sm:flex-row text-base sm:text-xl primary-color mx-4 mb-2">{selectSkill?.title} - {selectSkill?.duration}</div>
+                    <div className='pl-8 font-sans !leading-8'>{selectSkill?.expHeadings.map((work, index) => (
                         <div key={index} className='relative'>
-                            <p className='text-base pl-4 '>
+                            <p className='text-base pl-5 '>
                                 <span className="absolute left-0 text-blue-500">•</span> {work}
                             </p>
                             <p className='text-sm pl-8 text-gray-400'>{selectSkill.experience[index]}</p>
@@ -60,7 +60,7 @@ const Experience = () => {
                     <div>
                         {selectSkill?.projects.map((project, point) => (
                             <div>
-                                <div className='flex items-start py-5 justity-between'>
+                                <div className='flex items-start py-2 justity-between mt-2'>
 
                                     <img className='w-[60px] hover:w-[100px] px-1' src={project?.logo} alt="" />
                                     <h6 className='px-2 text-base py-3 primary-color'>{project?.name}</h6>
@@ -71,12 +71,12 @@ const Experience = () => {
                                         {createElement(selectSkill?.linkicon)}
                                     </a>
                                 </div>
-                                <div className='pl-4 font-sans !leading-8'>{project?.expHeadings.map((stack, module) => (
+                                <div className='pl-8 font-sans !leading-8'>{project?.expHeadings.map((stack, module) => (
                                     <div key={module} className='relative'>
-                                        <p className='text-base pl-4'>
+                                        <p className='text-base pl-8'>
                                             <span className="absolute left-0 text-blue-500">•</span> {stack}
                                         </p>
-                                        <p className='text-sm pl-8 text-gray-400'>{project?.experience[module]}</p>
+                                        <p className='text-sm pl-5 text-gray-400'>{project?.experience[module]}</p>
                                     </div>
                                 ))}</div>
 
@@ -94,7 +94,8 @@ const Experience = () => {
                     experience.map((exp, i) => (
                         <div key={i} className='bg-[#161616] border border-lime-600 sm:cursor-pointer relative group w-full flex items-center gap-5 p-5 max-w-sm rounded-xl mx-2' >
                             <div>
-                                <img className=' w-24 group-hover:scale-100 duration-200 justify-center items-center' src={exp.icon}></img><h6 className='font-bold text-2xl' >{exp.name}</h6>
+                                <div className='flex gap-2 mb-4'>
+                                <img className=' w-8 group-hover:scale-100 duration-200 justify-between items-center' src={exp.icon}></img><h6 className='font-bold text-lg justify-between' >{exp.name}</h6></div>
                                 <a href='https://www.google.com/maps/place/Pruvity+HR+Solutions+Pvt.+Ltd/@9.9190315,78.1518084,15z/data=!4m2!3m1!1s0x0:0xa2f3f4718b1a7959?sa=X&ved=1t:2428&ictx=111' target="_blank" className=' text-xs text-blue-400 underline'>{exp.address}</a><br />
                                 <p className='font-bold mt-2'>{exp.title}</p>
                                 <h1 className=' text-sm'>{exp.duration}</h1><br />

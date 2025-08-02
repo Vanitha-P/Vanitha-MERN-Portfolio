@@ -1,6 +1,6 @@
 import React from 'react'
 import heroinIamge from '../assets/profile.jpg'
-import resume from '../assets/Vanitha_Fullstack_2024.pdf'
+import resume from '../assets/Vanitha_Senior_Software_Engineer.pdf'
 import { TypeAnimation } from 'react-type-animation'
 import {intro} from '../contents'
 
@@ -13,7 +13,7 @@ const Hero = () => {
             <div className='col-span-2 mx-10 my-auto'>
                 <h1 className='text-white text-2xl sm:text-2xl lg:text-5xl font-extrabold' data-aos="fade-down" data-aos-delay={200}>
                     <span className='primary-color'>I'm a</span> <br />
-                    <TypeAnimation sequence={["Backend Developer", 500, "MERN Stack Developer", 500, "Nodejs Developer", 500, "Laravel Developer", 500]} wrapper="span" speed={50} repeat={Infinity} /></h1>
+                    <TypeAnimation sequence={["Senior Software Engineer", 500, "Backend Developer", 500, "MERN Stack Developer", 500, "Nodejs Developer", 500, "Laravel Developer", 500]} wrapper="span" speed={50} repeat={Infinity} /></h1>
                 <p className='text-white sm:text-lg my-6 lg:text-xl' data-aos="fade-down" data-aos-delay={250}>{intro[0].intro}</p>
                 <div className='my-8 flex' data-aos="fade-down" data-aos-delay={300}>
                     <a href={resume} className='px-6 py-3 w-auto rounded-xl mr-4 bg-gradient-to-br from-lime-500 to-blue-500 text-white' download>

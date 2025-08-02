@@ -3,7 +3,7 @@ import css from '../src/assets/css.png'
 import js from '../src/assets/javascript.png'
 import tailwind from '../src/assets/tailwind.png'
 import reactjs from '../src/assets/react.png'
-import vite from '../src/assets/vite.png'
+import nestjs from '../src/assets/nestjs.png'
 import git from '../src/assets/git.png'
 import github from '../src/assets/github.png'
 import mongoose from '../src/assets/mongoose.png'
@@ -17,7 +17,15 @@ import express from '../src/assets/expressjs.png'
 import mteamz from '../src/assets/mteamz.png'
 import hrblusky from '../src/assets/hrblusky.png'
 import pruvitygroup from '../src/assets/pruvitygroup.png'
+import futurefocus from '../src/assets/futurefocus.png'
+import photon from '../src/assets/photon.png'
 import laravel from '../src/assets/laravel.png'
+import redis from '../src/assets/redis.png'
+import docker from '../src/assets/docker.png'
+import postgresql from '../src/assets/postgresql.png'
+import kubernetes from '../src/assets/kubernetes.png'
+import avis from '../src/assets/avis.png'
+import momopay from '../src/assets/momopay.png'
 import { AiOutlineArrowRight, AiOutlineGlobal, AiOutlineLink, AiFillPhone, AiOutlineVerticalAlignBottom, AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 const technologies = [
   {
@@ -45,16 +53,16 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Vite",
-    icon: vite,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
   },
   {
     name: "Express JS",
     icon: express,
+  },
+  {
+    name: "Nest JS",
+    icon: nestjs,
   },
   {
     name: "MongoDB",
@@ -75,6 +83,22 @@ const technologies = [
   {
     name: "GitHup",
     icon: github,
+  },
+  {
+    name: "Redis",
+    icon: redis,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Kubernetes",
+    icon: kubernetes,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
   }
 ];
 const tools = [
@@ -88,11 +112,50 @@ const tools = [
   },
   {
     name: "Postman",
-    icon: "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/tools/postman.png",
+    icon: postman,
   },
 ];
 const experience = [
-
+  {
+    name: "Photon Infotech Pvt Ltd",
+    icon: photon,
+    title: "Senior Software Engineer I",
+    duration: "March-2025 to Present",
+    project: 'Project: Avis First',
+    stack: '#Nodejs #Nestjs #Redis #PostgreSQL',
+    address: "D.L.F Cyber City (DLF IT Park), Ramapuram, Chennai, Tamil Nadu 600125",
+    global: AiOutlineGlobal,
+    linkicon: AiOutlineLink,
+    arrow: AiOutlineArrowRight,
+    expHeadings: ["Backend Development (NodeJS, NestJS,  Redis): ", "Resolved Complex Bugs: ",],
+    experience: ["Developed and implemented concierge module for the Avis First Car Rental LLC client.",
+    ],
+    projects: [{
+      name: "AVIS - Car Rental APP", logo: avis, website: "https://www.avis.com/en/home",
+      applink: "https://play.google.com/store/apps/details?id=com.avis.androidapp&hl=en_IN", expHeadings: ["Design Pattern: ", "Jest: ", "Mockoon: ",], experience: ['Implemented Strategy and Abstract Factory patterns.', 'Maintained 95%+ coverage using Jest.', 'Created mock APIs with Mockoon for faster integration.',]
+    }],
+  },
+  {
+    name: "Future Focus Infotech Pvt Ltd",
+    icon: futurefocus,
+    title: "Senior Software Engineer",
+    duration: "July-2024 to Jan-2025",
+    project: 'Project: MOMO Payment',
+    stack: '#Nodejs #Expressjs #Nestjs #Redis #Mongodb #PostgreSQL',
+    address: "No.169,(old 62 1, Habibullah Rd, Bharathy Nagar, T. Nagar, Chennai, Tamil Nadu 600017",
+    global: AiOutlineGlobal,
+    linkicon: AiOutlineLink,
+    arrow: AiOutlineArrowRight,
+    expHeadings: ["Backend Development (NodeJS, Express/Nest, PostgreSQL, Redis): ", "Bug Fixing & Performance Optimization: ", " Dedicated Backend Support: "],
+    experience: [" Developed and implemented 15 key features for the Comviva’s Momo payment app.",
+      " Demonstrated expertise in debugging and resolving complex issues, improving application stability and performance.",
+      " Provided continuous backend support, working off-hours to ensure project deadlines were met and critical issues were promptly addressed.",
+    ],
+    projects: [{
+      name: "MOMO Payment", logo: momopay, website: "https://momo.mtn.com/home-page/",
+      applink: "https://play.google.com/store/apps/details?id=com.consumerug", expHeadings: [" express-rate-limiting: ", "Helmet: ", "Swagger: ", "JWT: ", "PostgreSQL: ", "Redis: "], experience: ['To prevent API abuse and brute-force attacks.', 'Secured HTTP headers to protect against web vulnerabilities.', ' Integrated Swagger for interactive API documentation and testing.', 'To secure API access with token-based authentication.', ' Stored and managed application data.', 'Cached data for faster access.']
+    }],
+  },
   {
     name: "Pruvity HR Solutions Pvt Ltd",
     icon: pruvitygroup,
@@ -145,20 +208,20 @@ const experience = [
 ];
 const intro = [
   {
-    intro: "Passionate Backend Developer with 4.5+ years of experience, mastering Node.js and Laravel to build scalable, high-performance applications. Adept at crafting seamless APIs and optimizing database interactions with MongoDB. Committed to delivering robust, elegant solutions that drive business success.",
+    intro: "Passionate Backend Developer with 4.5+ years of experience, mastering Node.js, Express.js, Nest.js and Laravel to build scalable, high-performance applications. Adept at crafting seamless APIs and optimizing database interactions with MongoDB, PostgreSQL, Redis. Committed to delivering robust, elegant solutions that drive business success.",
     download: AiOutlineVerticalAlignBottom,
     contact: AiFillPhone
   }
 ];
 const about = [
   {
-    one: "Dynamic Backend Developer with over 3 years of expertise in Node.js and Laravel, dedicated to creating scalable and high-performance server-side applications. My journey in tech has been driven by a passion for solving complex problems and delivering robust, elegant solutions.",
+    one: "Dynamic and results-driven Backend Developer with 4.5+ years of experience building scalable, secure, and high-performance applications using Node.js, NestJS, and Laravel. I specialize in crafting clean, efficient APIs, optimizing databases with MongoDB and PostgreSQL, and engineering backend systems that power real-world platforms.",
 
-    two: "Proficient in building seamless APIs and optimizing database interactions using MongoDB, I excel at crafting efficient and maintainable backend systems. Recently, I expanded my skill set to include React Native, enhancing my ability to create full-stack solutions and mobile applications.",
+    two: "Driven by a deep passion for problem-solving, I take pride in transforming complex requirements into elegant, maintainable solutions.",
 
-    three: "I thrive in collaborative environments, contributing to code reviews and embracing best practices to elevate team performance.",
+    three: "I thrive in fast-moving, collaborative environments, actively participating in code reviews, sharing best practices, and continuously learning to level up both myself and my team.",
 
-    four: '"' + "Let's build something exceptional together." + '"'
+    four: '"' + "Let’s turn ideas into impactful digital experiences." + '"'
   }
 ]
 const footer = [
