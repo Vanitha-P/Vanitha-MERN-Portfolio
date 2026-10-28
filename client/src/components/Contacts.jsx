@@ -114,7 +114,7 @@ const Contacts = () => {
                                             </div>
                                             <div class="sm:col-span-2 text-right items-center justify-center px-2.5">
                                                 <button type="submit"
-                                                    disabled={buttonLoading && true} class="justify-center text-xl w-52 p-2 mt-2 font-semibold text-white bg-primary-color rounded-xl bg-gradient-to-br from-lime-500 to-blue-500">{buttonLoading ? 'Loading..' : 'Save'}</button>
+                                                    disabled={buttonLoading && true} class="justify-center text-xl w-40 p-2 mt-2 font-semibold text-white bg-primary-color rounded-xl bg-gradient-to-br from-lime-500 to-blue-500">{buttonLoading ? 'Loading..' : 'Save'}</button>
                                             </div>
                                         </div>
                                     </form>
